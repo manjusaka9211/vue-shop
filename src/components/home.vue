@@ -15,8 +15,11 @@ export default {
 
   },
   methods: {
+    // 退出登录
     logout () {
+      // 清空sessionStorage中的token
       sessionStorage.clear()
+      // 通过编程式导航跳转到登录页面
       this.$router.push('/login')
     }
   }
