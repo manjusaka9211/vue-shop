@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// 引入登录组件
+// 引入组件
 import Login from '../components/login.vue'
 import Home from '../components/home.vue'
 import Welcome from '../components/welcome.vue'
@@ -11,6 +11,7 @@ import Categories from '../components/goods/categories.vue'
 import Params from '../components/goods/params.vue'
 import Goods from '../components/goods/goods.vue'
 import Addgoods from '../components/goods/add.vue'
+import Order from '../components/orders/order.vue'
 
 Vue.use(VueRouter)
 
@@ -32,7 +33,8 @@ const routes = [
       { path: '/categories', component: Categories },
       { path: '/params', component: Params },
       { path: '/goods', component: Goods },
-      { path: '/addgoods', component: Addgoods }
+      { path: '/addgoods', component: Addgoods },
+      { path: '/orders', component: Order }
     ]
   }
 ]
