@@ -187,7 +187,6 @@ export default {
         if (!valid) return false
         // 发送请求
         const { data: res } = await this.$http.post('roles', this.addForm)
-        console.log(res)
         // 判断是否添加成功，不成功则提示用户
         if (res.meta.status !== 201) return this.$message.error('角色添加失败')
         // 隐藏表单

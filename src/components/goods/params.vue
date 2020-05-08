@@ -232,10 +232,8 @@ export default {
         if (!valid) return false
         // 获取需要添加的分类的id
         const id = this.selectKeys[2]
-        console.log(this.editForm)
         // 发送请求
         const { data: res } = await this.$http.put(`categories/${id}/attributes/${this.editForm.attr_id}`, this.editForm)
-        console.log(res)
         // 判断请求是否成功
         if (res.meta.status !== 200) return this.$message.error('参数修改失败')
         this.$message.success('参数修改成功')
